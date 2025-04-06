@@ -29,7 +29,8 @@ kubectl get pods -n robot-shop
 
 ## 📌 Pod and Service Verification
 
-You can clearly see that since we specified **one replica** for each service in the `values.yaml` file, **one pod per service** (cart, catalouge, dispatch, mongodb, mysql, payment, rabbitmq, ratings, etc.) has been created in the `robot-shop` namespace.
+You can clearly see that since we specified **one replica** for each service in the `values.yaml` file, **one pod per service** (cart, catalouge, dispatch, mongodb, mysql, payment, rabbitmq, ratings, web, etc.) has been created in the `robot-shop` namespace.
 
 You can also verify that the corresponding **services** are created in the same namespace.
 
+![Verify services in robot-shop](images/svc_verify.png)
