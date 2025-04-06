@@ -229,7 +229,7 @@ We created custom **Helm charts** for deploying all microservices in the EKS clu
 ### ⚙️ Helm `values.yaml` (Central Config)
 
 <p align="center">
-  <img src="docs/images/values.yaml.png" alt="values.yaml" width="60%">
+  <img src="docs/images/values.png" alt="values.yaml" width="60%">
 </p>
 
 
