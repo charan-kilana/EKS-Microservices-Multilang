@@ -66,3 +66,17 @@ kubectl get ingress -n robot-shop
 ```
 After applying the Ingress resource, go to the **AWS Console → EC2 → Load Balancers** and verify whether the **Ingress-based Application Load Balancer (ALB)** has been created successfully.
 ![Verify Ingress in AWS console](images/ingress_elb.png)
+
+## ⏳ Wait for Load Balancer to Become Active
+
+It may take up to **5–10 minutes** for the ALB to transition from **Provisioning** to **Active** state.
+
+Once the status becomes **Active**, you can access the application using the Load Balancer's DNS.
+
+> If the HTTPS URL doesn't work, try accessing it via **HTTP** instead.
+
+### 🔗 Example:
+[http://k8s-robotsho-web-ce30fdb224-3f2bfed91fe25a24.elb.us-east-1.amazonaws.com/](http://k8s-robotsho-web-ce30fdb224-3f2bfed91fe25a24.elb.us-east-1.amazonaws.com/)
+
+![Application Final](images/elb_link.png)
+
