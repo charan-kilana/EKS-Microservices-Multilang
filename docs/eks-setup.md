@@ -21,6 +21,7 @@ After installing the AWS CLI, configure it using the following command:
 
 ```bash
 aws configure
+```
 
 ## 🔍 Verifying Installed Versions
 
