@@ -8,9 +8,9 @@ The reason for choosing this project is to showcase an architecture built using 
 
 - **Node.js (Express)**
 - **Java (Spring Boot)**
-- **Python (Flask)**
+- **Payments- Python (Flask)**
 - **Golang**
-- **PHP (Apache)**
+- **Ratings- PHP (Apache)**
 - **MongoDB**
 - **Redis**
 - **MySQL**
