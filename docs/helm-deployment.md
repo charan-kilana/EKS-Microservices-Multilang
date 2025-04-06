@@ -15,3 +15,13 @@ helm install robot-shop --namespace robot-shop .
 **Note:** : You should clone the repository and navigate to the path: **/root/EKS-Microservices-Multilang/EKS/helm**. This directory must contain both `Chart.yaml` and `values.yaml` in order to install the Helm release `robot-shop` successfully.
 
 ![Helm Chart Directory Structure](images/default_path_helm.png)
+
+## ✅ Verify if All Pods Are Created in the `robot-shop` Namespace
+
+Run the following command to check the status of all pods in the `robot-shop` namespace:
+
+```bash
+kubectl get pods -n robot-shop
+```
+
+![Verify pods in robot-shop](images/verify_pods.png)
