@@ -233,6 +233,16 @@ We created custom **Helm charts** for deploying all microservices in the EKS clu
 </p>
 
 
+## 🚫 Why We Are Not Using AWS Fargate with EKS
+
+We are **not using Fargate** with our EKS cluster because:
+
+- **Fargate does not support persistent volumes backed by Amazon EBS**, which are required for stateful applications like **Redis**.
+- Our application uses **Redis deployed as a StatefulSet**, which requires **PersistentVolumeClaims (PVCs)** backed by EBS.
+- Fargate is better suited for **stateless workloads** or services that don’t require direct access to block storage.
+
+Therefore, we are using **EC2-managed nodes** in our EKS cluster, which fully support EBS-backed volumes and stateful workloads like Redis.
+
 
 ## 🚀 EKS Cluster Setup
 
