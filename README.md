@@ -80,12 +80,15 @@ The application is designed as an e-commerce platform for Robots and AI products
 
 Each functional area is developed as an independent microservice:
 
+- `user-service`
 - `catalogue-service`
 - `ratings-service`
 - `cart-service`
 - `payment-service`
 - `shipping-service`
 - `order-complete-service`
+- `Mongo-service`
+- `MySQL-service`
 
 ---
 
