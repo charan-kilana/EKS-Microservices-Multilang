@@ -151,21 +151,12 @@ If you explore each service directory in the repository, you'll notice:
 
 This setup showcases how containerization helps unify deployment and scaling across services, regardless of the tech stack.
 
-## 📸 Dockerfile References (Per Language)
+## 📸 Dockerfile References (Side by Side)
 
-Below are example Dockerfiles from three different services, each written in a different language:
+| Node.js Dockerfile | Python Dockerfile | Java Dockerfile |
+|--------------------|-------------------|-----------------|
+| ![Dockerfile 1](docs/images/docker-1.png) | ![Dockerfile 2](docs/images/docker-2.png) | ![Dockerfile 3](docs/images/docker-3.png) |
 
-**Dockerfile – Node.js Service**
-
-![Dockerfile 1](docs/images/docker-1.png)
-
-**Dockerfile – Python Service**
-
-![Dockerfile 2](docs/images/docker-2.png)
-
-**Dockerfile – Java Service**
-
-![Dockerfile 3](docs/images/docker-3.png)
 
 
 
