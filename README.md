@@ -156,7 +156,7 @@ This setup showcases how containerization helps unify deployment and scaling acr
 
 ## 📸 Dockerfile References (Side by Side)
 
-| Node.js Dockerfile | Python Dockerfile | Java Dockerfile |
+| Node.js Dockerfile | Python Dockerfile | GoLang Dockerfile |
 |--------------------|-------------------|-----------------|
 | ![Dockerfile 1](docs/images/docker-1.png) | ![Dockerfile 2](docs/images/docker-2.png) | ![Dockerfile 3](docs/images/docker-3.png) |
 
