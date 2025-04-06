@@ -13,3 +13,27 @@ The **Amazon EBS CSI (Container Storage Interface) plugin** is required in EKS t
 
 We're deploying **Redis** as a StatefulSet, which requires a **PersistentVolume** to store cart/session data.  
 To allow Redis pods to attach EBS volumes, the **EBS CSI plugin must be installed** and configured on the EKS cluster.
+
+# 📦 EBS CSI Plugin Configuration
+
+The Amazon EBS CSI (Container Storage Interface) plugin enables Kubernetes running on EKS to manage Amazon EBS volumes for persistent storage.
+
+To work correctly, the EBS CSI plugin requires **IAM permissions** to make calls to AWS APIs on your behalf.
+
+---
+
+## ✅ Step 1: Create IAM Role and Attach Policy
+
+
+Replace `<YOUR-CLUSTER-NAME>` with your actual EKS cluster name:
+
+```bash
+eksctl create iamserviceaccount \
+    --name ebs-csi-controller-sa \
+    --namespace kube-system \
+    --cluster <YOUR-CLUSTER-NAME> \
+    --role-name AmazonEKS_EBS_CSI_DriverRole \
+    --role-only \
+    --attach-policy-arn arn:aws:iam::aws:policy/service-role/AmazonEBSCSIDriverPolicy \
+    --approve
+```
