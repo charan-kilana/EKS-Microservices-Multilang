@@ -22,8 +22,8 @@ spec:
         image: rabbitmq:3.7-management-alpine
         imagePullPolicy: {{ .Values.image.pullPolicy }}
         ports:
-        - containerPort: 5672
-        - containerPort: 15672
+        - containerPort: 5672 #AMQP Port – Used by applications/services to connect and send/receive messages (the actual messaging traffic).
+        - containerPort: 15672 #Management UI Port – Used to access the RabbitMQ web-based dashboard (to monitor queues, exchanges, etc.).
         resources:
           limits:
             cpu: 200m
