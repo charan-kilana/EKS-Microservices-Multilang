@@ -25,3 +25,11 @@ kubectl get pods -n robot-shop
 ```
 
 ![Verify pods in robot-shop](images/verify_pods.png)
+
+
+## 📌 Pod and Service Verification
+
+You can clearly see that since we specified **one replica** for each service in the `values.yaml` file, **one pod per service** has been created in the `robot-shop` namespace.
+
+You can also verify that the corresponding **services** are created in the same namespace.
+
