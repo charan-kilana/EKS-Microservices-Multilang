@@ -41,8 +41,6 @@ You can access the application using the LoadBalancer URL:
 
 👉 [https://k8s-robotsho-web-ce30fdb224-3f2bfed91fe25a24.elb.us-east-1.amazonaws.com/](https://k8s-robotsho-web-ce30fdb224-3f2bfed91fe25a24.elb.us-east-1.amazonaws.com/)
 
-However, it's recommended to use an **Ingress Controller** for more efficient and manageable routing of external traffic.
-
 > **Note:**  
 > If you're unable to access the application:
 > - Check the **security group settings** for your **EKS worker nodes** and **Load Balancer**.
@@ -50,3 +48,21 @@ However, it's recommended to use an **Ingress Controller** for more efficient an
 >   - **Inbound Rules**: HTTP (80), HTTPS (443), and optionally all traffic (`0.0.0.0/0`)
 >   - **Outbound Rules**: All traffic
 
+## 🌐 Ingress Controller Setup
+
+However, it's recommended to use an **Ingress Controller** for more efficient and manageable routing of external traffic.
+
+To create the Ingress resource, run the following command:
+
+```bash
+kubectl apply -f ingress.yaml
+```
+
+**Note:**: You should be in the path where ingress.yaml is present: **/root/EKS-Microservices-Multilang/EKS/helm**
+
+## ✅ Verify Ingress is created or not
+```bash
+kubectl get ingress -n robot-shop
+```
+After applying the Ingress resource, go to the **AWS Console → EC2 → Load Balancers** and verify whether the **Ingress-based Application Load Balancer (ALB)** has been created successfully.
+![Verify Ingress in AWS console](images/ingress_elb.png)
