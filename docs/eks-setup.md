@@ -30,3 +30,13 @@ Ensure that the required tools are installed correctly.
 Below is a screenshot taken from the EC2 instance showing the versions of `eksctl`, `kubectl`, and `aws` CLI:
 
 ![EKS Tool Versions](images/eks-version.png)
+
+## 🛠️ Steps to Create EKS Cluster
+
+### ✅ Step 1: Create an EKS Cluster
+
+Use the following command to create an EKS cluster named `three-tier-cluster` in the `us-east-1` region:
+
+```bash
+eksctl create cluster --name three-tier-cluster --region us-east-1
+```
