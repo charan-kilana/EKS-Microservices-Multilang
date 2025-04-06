@@ -220,7 +220,7 @@ We created custom **Helm charts** for deploying all microservices in the EKS clu
 
 ### 🔧 Sample `service.yaml` Files
 
-| Service - 1 | Service - 2 | Service - 3 |
+| Service - cart | Service - catalouge | Service - MongoDB |
 |-------------|-------------|-------------|
 | ![](docs/images/service-cart.png) | ![](docs/images/deployment-catalouge.png) | ![](docs/images/service-mongodb.png) |
 
