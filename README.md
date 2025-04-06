@@ -31,3 +31,9 @@ This project closely mimics a real-time e-commerce application with the followin
 - **Cart**: Allows users to add and manage items in their shopping cart.
 - **Shipping**: Provides options for delivery address input and calculates shipping costs.
 - **Payment**: Handles payment processing for product purchases.
+
+## 🚀 EKS Cluster Setup
+
+To deploy this application on Amazon EKS, follow the instructions in the link below:
+
+👉 [EKS Cluster Setup Guide](docs/eks-setup.md)
