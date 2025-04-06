@@ -58,7 +58,7 @@ helm install aws-load-balancer-controller eks/aws-load-balancer-controller \
 
 ![VpcId_with_cluster](images/vpcid_with_cluster.png)
 
-![Install Helm](images/createiamrole.png)
+![Install Helm](images/helminstall.png)
 
 Verify that the deployments are running.
 
