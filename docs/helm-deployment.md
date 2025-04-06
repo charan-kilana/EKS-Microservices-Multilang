@@ -12,10 +12,6 @@ helm install --name robot-shop --namespace robot-shop .
 kubectl create ns robot-shop
 helm install robot-shop --namespace robot-shop .
 ```
-
-> **Note:**  
-> You should clone the repository and navigate to the path:  
-> `/root/EKS-Microservices-Multilang/EKS/helm`  
-> This directory must contain both `Chart.yaml` and `values.yaml` in order to install the Helm release `robot-shop` successfully.
+**Note:** : You should clone the repository and navigate to the path: **/root/EKS-Microservices-Multilang/EKS/helm**. This directory must contain both `Chart.yaml` and `values.yaml` in order to install the Helm release `robot-shop` successfully.
 
 ![Helm Chart Directory Structure](images/default_path_helm.png)
