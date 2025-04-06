@@ -262,3 +262,8 @@ To expose the application to the external world, we need to configure an **AWS A
 
 👉 [ALB Configuration Guide](docs/alb.md)
 
+## 📦 EBS CSI Plugin Configuration
+
+To enable dynamic provisioning of persistent storage (EBS volumes) for stateful workloads like Redis, the **EBS CSI Driver** must be installed and configured on the EKS cluster.
+
+👉 [EBS CSI Driver Setup Guide](docs/ebs-csi-driver.md)
