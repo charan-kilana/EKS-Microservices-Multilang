@@ -80,3 +80,7 @@ Once the status becomes **Active**, you can access the application using the Loa
 
 ![Application Final](images/elb_link.png)
 
+
+Hurray
+we accessed the application
+![Hurray!!!](images/wow_hurray.png)
