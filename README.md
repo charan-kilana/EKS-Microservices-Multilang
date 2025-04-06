@@ -32,6 +32,104 @@ This project closely mimics a real-time e-commerce application with the followin
 - **Shipping**: Provides options for delivery address input and calculates shipping costs.
 - **Payment**: Handles payment processing for product purchases.
 
+## 🧱 Three-Tier Architecture Overview
+
+Our project follows a **Three-Tier Architecture**, which includes:
+
+- **Frontend (Presentation Layer)**: UI layer where users interact with the application.
+- **Backend (Logic Layer)**: Handles business logic, APIs, and service integration.
+- **Database (Data Layer)**: Stores and retrieves data like user info, product details, and order history.
+
+---
+
+## 📐 High-Level Design & User Workflow
+
+The application is designed as an e-commerce platform for Robots and AI products. Here's how a typical user journey looks:
+
+1. The user visits the application.
+2. The user either signs in or creates a new account.
+3. Upon login, the user navigates to the **Catalogue**, which has two categories:
+   - **Robots**
+   - **AI Products**
+4. Once a category is selected, the user sees a list of products with:
+   - Product Name
+   - Image
+   - Description
+   - Ratings
+5. If interested, the user adds a product to the **Cart**.
+6. The user then enters **Shipping Details**.
+7. The user proceeds to enter **Payment Details**.
+8. Upon successful payment, the **Order is Placed**.
+9. The user receives an **Order Notification**.
+
+---
+
+## 🧩 Microservices in the Application
+
+Each functional area is developed as an independent microservice:
+
+- `catalogue-service`
+- `ratings-service`
+- `cart-service`
+- `payment-service`
+- `shipping-service`
+- `order-complete-service`
+
+---
+
+## 🗄️ Database & Messaging in the Architecture
+
+Alongside the functional microservices, we also use dedicated services for data storage and messaging:
+
+- **Redis**: Used for fast, in-memory data storage for the cart functionality.
+- **MySQL (RDS)**: Used for storing structured, relational data such as user details, order history, and shipping info.
+- **MongoDB**: Used for unstructured or flexible schema data like product catalogues and user reviews.
+- **RabbitMQ**: Acts as a message broker for asynchronous communication between microservices, especially for order placement and notification events.
+
+Each of these components plays a crucial role in supporting the scalability, responsiveness, and modularity of our application.
+
+
+## 💡 Why Microservices Instead of Monolithic?
+
+### 🔸 Monolithic Architecture
+
+In a **monolithic application**, all functionalities (UI, logic, database) are built and deployed as a single unit.
+
+**Used When:**
+- The application is small or simple.
+- The team is small and there's no need for language diversity.
+- You want faster initial development and deployment.
+
+**Example:**  
+A simple blog website built using only Django or Spring Boot.
+
+---
+
+### 🔹 Microservices Architecture
+
+In **microservices**, each functionality (catalogue, cart, payment, etc.) is developed, deployed, and scaled independently.
+
+**Used When:**
+- The application is complex and modular.
+- You want to use different technologies/languages for different services.
+- You need independent scaling and deployment.
+- Teams are working in parallel on different features.
+
+**Example:**  
+E-commerce platforms like Amazon or Flipkart, where each feature is a separate service (search, cart, payment, recommendation, etc.)
+
+---
+
+## 🧑‍💻 Why We Chose Microservices
+
+Although this project could be developed as a monolith using a single language, we chose microservices to:
+
+- Showcase polyglot architecture using multiple programming languages.
+- Demonstrate real-world distributed systems used in scalable cloud applications.
+- Practice container orchestration and deployment using Kubernetes (EKS).
+
+
+
 ## 🚀 EKS Cluster Setup
 
 To deploy this application on Amazon EKS, follow the instructions in the link below:
