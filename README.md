@@ -155,11 +155,17 @@ This setup showcases how containerization helps unify deployment and scaling acr
 
 Below are example Dockerfiles from three different services, each written in a different language:
 
-<p align="center">
-  <img src="../docs/images/docker-1.png" alt="Dockerfile 1" width="30%" style="margin-right: 10px;">
-  <img src="../docs/images/docker-2.png" alt="Dockerfile 2" width="30%" style="margin: 0 10px;">
-  <img src="../docs/images/docker-3.png" alt="Dockerfile 3" width="30%">
-</p>
+**Dockerfile - Node.js Service**
+
+![Dockerfile 1](../docs/images/docker-1.png)
+
+**Dockerfile - Python Service**
+
+![Dockerfile 2](../docs/images/docker-2.png)
+
+**Dockerfile - Java Service**
+
+![Dockerfile 3](../docs/images/docker-3.png)
 
 
 ## 🚀 EKS Cluster Setup
