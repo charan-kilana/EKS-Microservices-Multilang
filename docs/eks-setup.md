@@ -21,3 +21,11 @@ After installing the AWS CLI, configure it using the following command:
 
 ```bash
 aws configure
+
+## 🔍 Verifying Installed Versions
+
+Ensure that the required tools are installed correctly.
+
+Below is a screenshot taken from the EC2 instance showing the versions of `eksctl`, `kubectl`, and `aws` CLI:
+
+![EKS Tool Versions](images/eks-version.png)
