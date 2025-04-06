@@ -246,3 +246,9 @@ To enable persistent storage for services like Redis in EKS, follow the instruct
 
 👉 [OIDC + EBS Setup Guide](docs/iam-oidc-ebs.md)
 
+## 🌐 ALB Configuration
+
+To expose the application to the external world, we need to configure an **AWS Application Load Balancer (ALB)** using the **AWS Load Balancer Controller**.
+
+👉 [ALB Configuration Guide](docs/alb.md)
+
