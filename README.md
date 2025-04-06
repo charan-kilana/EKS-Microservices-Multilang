@@ -4,19 +4,31 @@ This is a demo e-commerce project that simulates an online platform for selling 
 
 The reason for choosing this project is to showcase an architecture built using multiple programming languages and microservices. Each microservice is developed using a different technology stack, representing a real-world polyglot microservices setup.
 
-### Technologies Used
+### 🛠️ Technologies Used
 
-- **Node.js (Express)**
-- **Java (Spring Boot)**
-- **Payments- Python (Flask)**
-- **Golang**
-- **Ratings- PHP (Apache)**
-- **MongoDB**
-- **Redis**
-- **MySQL**
-- **RabbitMQ**
-- **Nginx**
-- **AngularJS**
+Our microservices are implemented using a diverse set of programming languages, frameworks, and tools:
+
+- **Frontend (UI Layer)**:  
+  - `AngularJS` – User-facing application
+
+- **Backend Microservices**:
+  - `Node.js (Express)` – User Login, Cart, Catalogue
+  - `Java (Spring Boot)` – Shipping
+  - `Python (Flask)` – Payments
+  - `Golang` – Dispatch
+  - `PHP (Apache)` – Ratings
+
+- **Databases**:
+  - `MongoDB` – Storing user details
+  - `Redis` – Storing cart session data
+  - `MySQL` – Structured data storage (e.g., orders, products)
+
+- **Messaging**:
+  - `RabbitMQ` – Message brokering between microservices
+
+- **API Gateway / Reverse Proxy**:
+  - `Nginx` – Routing requests to appropriate services
+
 
 ### Project Origin
 
