@@ -44,6 +44,3 @@ eksctl create addon --name aws-ebs-csi-driver --cluster <YOUR-CLUSTER-NAME> --se
 ```
 
 **Note**: If your cluster is in the AWS GovCloud (US-East) or AWS GovCloud (US-West) AWS Regions, then replace arn:aws: with arn:aws-us-gov:.
-
-**References**:
-https://repost.aws/knowledge-center/eks-persistent-storage
