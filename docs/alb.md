@@ -25,3 +25,6 @@ eksctl create iamserviceaccount \
   --attach-policy-arn=arn:aws:iam::<your-aws-account-id>:policy/AWSLoadBalancerControllerIAMPolicy \
   --approve
 ```
+**Note**: Here you should update your cluster name and account_id
+
+![Create IAM role](images/createiamrole.png)
