@@ -160,6 +160,45 @@ This setup showcases how containerization helps unify deployment and scaling acr
 |--------------------|-------------------|-----------------|
 | ![Dockerfile 1](docs/images/docker-1.png) | ![Dockerfile 2](docs/images/docker-2.png) | ![Dockerfile 3](docs/images/docker-3.png) |
 
+## 🚢 Why Use Kubernetes Over Standalone Docker?
+
+Instead of deploying each container individually using Docker and managing networking manually (e.g., with `--link`), it's more efficient to use **Kubernetes**, which provides:
+
+- Automatic container orchestration
+- Self-healing and fault tolerance
+- Horizontal scaling of services
+- Better service discovery and load balancing
+- Centralized configuration and secret management
+
+---
+
+## 📊 Kubernetes vs Docker (Standalone)
+
+| Feature                         | Docker (Standalone)                            | Kubernetes                                     |
+|---------------------------------|-------------------------------------------------|------------------------------------------------|
+| **Container Orchestration**     | ❌ Manual (using scripts, `docker-compose`)     | ✅ Built-in orchestration and scheduling        |
+| **Auto-scaling**                | ❌ Not available                                | ✅ HPA (Horizontal Pod Autoscaler)              |
+| **Self-healing**                | ❌ Needs manual restart                         | ✅ Auto restarts failed pods                    |
+| **Load Balancing**              | ❌ External setup needed                        | ✅ Built-in load balancer via Services          |
+| **Rolling Updates & Rollbacks**| ❌ Manual effort                                | ✅ Native support in Deployments                |
+| **Multi-node Deployment**       | ❌ Complex setup                                | ✅ Designed for multi-node, production-ready    |
+| **Monitoring & Logging**        | ❌ Needs external tools                         | ✅ Easily integrates with Prometheus/Grafana    |
+| **Configuration Management**    | ❌ Manual environment variables or .env files   | ✅ Secrets, ConfigMaps built-in                 |
+
+---
+
+## 🛠️ When to Use Docker Alone (Real-Time Use Cases)
+
+While Kubernetes is powerful, Docker (standalone or with `docker-compose`) is still very useful in scenarios like:
+
+- 🧪 **Local Development**: Quickly spinning up microservices on a developer’s laptop.
+- 📦 **CI/CD Pipelines**: Building, testing, and packaging apps into containers before deployment.
+- 🧼 **Lightweight Projects**: Simple apps or small-scale internal tools where orchestration is overkill.
+- 🎓 **Learning & Training**: Teaching container fundamentals or quick prototyping.
+
+---
+
+In our case, we chose **Kubernetes (EKS)** because we’re simulating a real-world, production-grade, cloud-native microservices architecture.
 
 
 
