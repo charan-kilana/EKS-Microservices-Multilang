@@ -34,3 +34,19 @@ You can clearly see that since we specified **one replica** for each service in 
 You can also verify that the corresponding **services** are created in the same namespace.
 
 ![Verify services in robot-shop](images/svc_verify.png)
+
+## 🌐 Accessing the Application
+
+You can access the application using the LoadBalancer URL:
+
+👉 [https://k8s-robotsho-web-ce30fdb224-3f2bfed91fe25a24.elb.us-east-1.amazonaws.com/](https://k8s-robotsho-web-ce30fdb224-3f2bfed91fe25a24.elb.us-east-1.amazonaws.com/)
+
+However, it's recommended to use an **Ingress Controller** for more efficient and manageable routing of external traffic.
+
+> **Note:**  
+> If you're unable to access the application:
+> - Check the **security group settings** for your **EKS worker nodes** and **Load Balancer**.
+> - Ensure the following are allowed:
+>   - **Inbound Rules**: HTTP (80), HTTPS (443), and optionally all traffic (`0.0.0.0/0`)
+>   - **Outbound Rules**: All traffic
+
