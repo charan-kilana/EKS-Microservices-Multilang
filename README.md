@@ -200,6 +200,38 @@ While Kubernetes is powerful, Docker (standalone or with `docker-compose`) is st
 
 In our case, we chose **Kubernetes (EKS)** because we’re simulating a real-world, production-grade, cloud-native microservices architecture.
 
+## 📦 Helm Chart Deployment in EKS
+
+We created custom **Helm charts** for deploying all microservices in the EKS cluster.
+
+- For each service, we wrote separate **Kubernetes `deployment.yaml`** and **`service.yaml`** files.
+- Configuration such as the container image, replicas, ports, and labels are passed through **`values.yaml`**.
+- The image paths used in the charts are pulled from **Docker Hub**.
+
+---
+
+### 🛠️ Sample `deployment.yaml` Files
+
+| Deployment - Service 1 | Deployment - Service 2 | Deployment - Service 3 |
+|------------------------|------------------------|------------------------|
+| ![](docs/images/deployment-1.png) | ![](docs/images/deployment-2.png) | ![](docs/images/deployment-3.png) |
+
+---
+
+### 🔧 Sample `service.yaml` Files
+
+| Service - 1 | Service - 2 | Service - 3 |
+|-------------|-------------|-------------|
+| ![](docs/images/service-1.png) | ![](docs/images/service-2.png) | ![](docs/images/service-3.png) |
+
+---
+
+### ⚙️ Helm `values.yaml` (Central Config)
+
+<p align="center">
+  <img src="docs/images/values.yaml.png" alt="values.yaml" width="60%">
+</p>
+
 
 
 ## 🚀 EKS Cluster Setup
