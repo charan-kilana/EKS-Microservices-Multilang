@@ -267,3 +267,9 @@ To expose the application to the external world, we need to configure an **AWS A
 To enable dynamic provisioning of persistent storage (EBS volumes) for stateful workloads like Redis, the **EBS CSI Driver** must be installed and configured on the EKS cluster.
 
 👉 [EBS CSI Driver Setup Guide](docs/ebs-csi-driver.md)
+
+## 🚀 Deploying Microservices via Helm Charts
+
+After completing all the EKS configurations (OIDC, EBS CSI Driver, ALB), the final step is to **deploy the entire microservices-based application** using **Helm charts**.
+
+👉 [Helm Deployment Guide](docs/helm-deployment.md)
