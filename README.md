@@ -19,9 +19,9 @@ Our microservices are implemented using a diverse set of programming languages, 
   - `PHP (Apache)` – Ratings
 
 - **Databases**:
-  - `MongoDB` – Storing user details
+  - `MongoDB` – Storing catalouge details
   - `Redis` – Storing cart session data
-  - `MySQL` – Structured data storage (e.g., orders, products)
+  - `MySQL` – Structured data storage (e.g., user, orders, products)
 
 - **Messaging**:
   - `RabbitMQ` – Message brokering between microservices
