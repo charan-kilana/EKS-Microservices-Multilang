@@ -140,6 +140,16 @@ Although this project could be developed as a monolith using a single language, 
 - Demonstrate real-world distributed systems used in scalable cloud applications.
 - Practice container orchestration and deployment using Kubernetes (EKS).
 
+## 🌐 Language & Containerization Overview
+
+Each microservice in this project is written using a different programming language. This demonstrates a real-world polyglot microservices architecture.
+
+If you explore each service directory in the repository, you'll notice:
+
+- Every service is implemented in a different language (e.g., Node.js, Java, Python, Go, PHP).
+- Each service contains its own `Dockerfile`, customized for its respective language and framework.
+
+This setup showcases how containerization helps unify deployment and scaling across services, regardless of the tech stack.
 
 
 ## 🚀 EKS Cluster Setup
