@@ -151,6 +151,16 @@ If you explore each service directory in the repository, you'll notice:
 
 This setup showcases how containerization helps unify deployment and scaling across services, regardless of the tech stack.
 
+## 📸 Dockerfile References (Per Language)
+
+Below are example Dockerfiles from three different services, each written in a different language:
+
+<p align="center">
+  <img src="../docs/images/docker-1.png" alt="Dockerfile 1" width="30%" style="margin-right: 10px;">
+  <img src="../docs/images/docker-2.png" alt="Dockerfile 2" width="30%" style="margin: 0 10px;">
+  <img src="../docs/images/docker-3.png" alt="Dockerfile 3" width="30%">
+</p>
+
 
 ## 🚀 EKS Cluster Setup
 
