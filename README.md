@@ -212,9 +212,9 @@ We created custom **Helm charts** for deploying all microservices in the EKS clu
 
 ### 🛠️ Sample `deployment.yaml` Files
 
-| Deployment - Service 1 | Deployment - Service 2 | Deployment - Service 3 |
+| Deployment - cart| Deployment - catalouge | Deployment - MongoDB |
 |------------------------|------------------------|------------------------|
-| ![](docs/images/deployment-1.png) | ![](docs/images/deployment-2.png) | ![](docs/images/deployment-3.png) |
+| ![](docs/images/deployment-cart.png) | ![](docs/images/deployment-catalouge.png) | ![](docs/images/deployment-mongodb.png) |
 
 ---
 
@@ -222,7 +222,7 @@ We created custom **Helm charts** for deploying all microservices in the EKS clu
 
 | Service - 1 | Service - 2 | Service - 3 |
 |-------------|-------------|-------------|
-| ![](docs/images/service-1.png) | ![](docs/images/service-2.png) | ![](docs/images/service-3.png) |
+| ![](docs/images/service-cart.png) | ![](docs/images/deployment-catalouge.png) | ![](docs/images/service-mongodb.png) |
 
 ---
 
