@@ -239,3 +239,10 @@ We created custom **Helm charts** for deploying all microservices in the EKS clu
 To deploy this application on Amazon EKS, follow the instructions in the link below:
 
 👉 [EKS Cluster Setup Guide](docs/eks-setup.md)
+
+## 🔐 IAM OIDC + EBS Integration
+
+To enable persistent storage for services like Redis in EKS, follow the instructions below to configure IAM OIDC and attach EBS volumes:
+
+👉 [OIDC + EBS Setup Guide](docs/iam-oidc-ebs.md)
+
