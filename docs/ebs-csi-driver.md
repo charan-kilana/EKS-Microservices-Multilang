@@ -42,3 +42,8 @@ eksctl create iamserviceaccount \
 ```bash
 eksctl create addon --name aws-ebs-csi-driver --cluster <YOUR-CLUSTER-NAME> --service-account-role-arn arn:aws:iam::<AWS-ACCOUNT-ID>:role/AmazonEKS_EBS_CSI_DriverRole --force
 ```
+
+**Note**: If your cluster is in the AWS GovCloud (US-East) or AWS GovCloud (US-West) AWS Regions, then replace arn:aws: with arn:aws-us-gov:.
+
+**References**:
+https://repost.aws/knowledge-center/eks-persistent-storage
