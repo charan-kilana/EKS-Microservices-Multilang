@@ -55,7 +55,7 @@ helm install aws-load-balancer-controller eks/aws-load-balancer-controller -n ku
 
 ![Install Helm](images/helminstall.png)
 
-Verify that the deployments are running.
+## Verify that the deployments are running.
 
 ```
 kubectl get deployment -n kube-system aws-load-balancer-controller
