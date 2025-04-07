@@ -1,4 +1,4 @@
-# Demo E-Commerce Project: Robot and AI Product Store
+# Deployment of E-Commerce microservice Project on EKS Cluster in AWS
 
 This is a demo e-commerce project that simulates an online platform for selling robots and artificial intelligence products.
 
