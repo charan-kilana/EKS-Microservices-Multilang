@@ -4,6 +4,8 @@ This is a demo e-commerce project that simulates an online platform for selling 
 
 The reason for choosing this project is to showcase an architecture built using multiple programming languages and microservices. Each microservice is developed using a different technology stack, representing a real-world polyglot microservices setup.
 
+![Arch Diagram](docs/images/arch_diagram.png)
+
 ### 🛠️ Technologies Used
 
 Our microservices are implemented using a diverse set of programming languages, frameworks, and tools:
