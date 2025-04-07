@@ -245,6 +245,8 @@ We are **not using Fargate** with our EKS cluster because:
 
 Therefore, we are using **EC2-managed nodes** in our EKS cluster, which fully support EBS-backed volumes and stateful workloads like Redis.
 
+# 🛠️ Deployment Steps for Microservices Application on Amazon EKS
+---
 
 ## 🚀 EKS Cluster Setup
 
