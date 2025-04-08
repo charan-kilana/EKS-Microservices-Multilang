@@ -1,3 +1,39 @@
+# 🛠️ Deployment Steps for Microservices Application on Amazon EKS
+---
+
+> 📘 **Note:** Before getting started with deployment, please go through this README file carefully.
+
+## 🚀 EKS Cluster Setup
+
+To deploy this application on Amazon EKS, follow the instructions in the link below:
+
+👉 [EKS Cluster Setup Guide](docs/eks-setup.md)
+
+## 🔐 IAM OIDC + EBS Integration
+
+To enable persistent storage for services like Redis in EKS, follow the instructions below to configure IAM OIDC and attach EBS volumes:
+
+👉 [OIDC + EBS Setup Guide](docs/iam-oidc-ebs.md)
+
+## 🌐 ALB Configuration
+
+To expose the application to the external world, we need to configure an **AWS Application Load Balancer (ALB)** using the **AWS Load Balancer Controller**.
+
+👉 [ALB Configuration Guide](docs/alb.md)
+
+## 📦 EBS CSI Plugin Configuration
+
+To enable dynamic provisioning of persistent storage (EBS volumes) for stateful workloads like Redis, the **EBS CSI Driver** must be installed and configured on the EKS cluster.
+
+👉 [EBS CSI Driver Setup Guide](docs/ebs-csi-driver.md)
+
+## 🚀 Deploying Microservices via Helm Charts
+
+After completing all the EKS configurations (OIDC, EBS CSI Driver, ALB), the final step is to **deploy the entire microservices-based application** using **Helm charts**.
+
+👉 [Helm Deployment Guide](docs/helm-deployment.md)
+
+
 # Deployment of E-Commerce microservice Project on EKS Cluster in AWS
 
 This is a demo e-commerce project that simulates an online platform for selling robots and artificial intelligence products.
@@ -245,35 +281,3 @@ We are **not using Fargate** with our EKS cluster because:
 
 Therefore, we are using **EC2-managed nodes** in our EKS cluster, which fully support EBS-backed volumes and stateful workloads like Redis.
 
-# 🛠️ Deployment Steps for Microservices Application on Amazon EKS
----
-
-## 🚀 EKS Cluster Setup
-
-To deploy this application on Amazon EKS, follow the instructions in the link below:
-
-👉 [EKS Cluster Setup Guide](docs/eks-setup.md)
-
-## 🔐 IAM OIDC + EBS Integration
-
-To enable persistent storage for services like Redis in EKS, follow the instructions below to configure IAM OIDC and attach EBS volumes:
-
-👉 [OIDC + EBS Setup Guide](docs/iam-oidc-ebs.md)
-
-## 🌐 ALB Configuration
-
-To expose the application to the external world, we need to configure an **AWS Application Load Balancer (ALB)** using the **AWS Load Balancer Controller**.
-
-👉 [ALB Configuration Guide](docs/alb.md)
-
-## 📦 EBS CSI Plugin Configuration
-
-To enable dynamic provisioning of persistent storage (EBS volumes) for stateful workloads like Redis, the **EBS CSI Driver** must be installed and configured on the EKS cluster.
-
-👉 [EBS CSI Driver Setup Guide](docs/ebs-csi-driver.md)
-
-## 🚀 Deploying Microservices via Helm Charts
-
-After completing all the EKS configurations (OIDC, EBS CSI Driver, ALB), the final step is to **deploy the entire microservices-based application** using **Helm charts**.
-
-👉 [Helm Deployment Guide](docs/helm-deployment.md)
