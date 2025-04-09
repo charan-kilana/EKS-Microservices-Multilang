@@ -33,6 +33,15 @@ After completing all the EKS configurations (OIDC, EBS CSI Driver, ALB), the fin
 
 👉 [Helm Deployment Guide](docs/helm-deployment.md)
 
+## 🎉 Hurray! Application is Live
+
+From this point onward, you can interact with the application and explore its features.
+
+✅ Hurray — we successfully accessed the application!
+
+![Hurray!!!](docs/images/wow_hurray.png)
+
+
 
 # Deployment of E-Commerce microservice Project on EKS Cluster in AWS
 
